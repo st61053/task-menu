@@ -17,6 +17,7 @@ const TASK_LIST = [
     img: u1,
     title: "Šaty dělaj člověka",
     pts: 5,
+    lang: "bodů",
     desc: "Popis místa",
     map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
   },
@@ -24,6 +25,7 @@ const TASK_LIST = [
     img: u2,
     title: "Poklona vládci",
     pts: 10,
+    lang: "bodů",
     desc: "Popis místa",
     map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
   },
@@ -31,6 +33,7 @@ const TASK_LIST = [
     img: u3,
     title: "Šamanův lektvar",
     pts: 3,
+    lang: "body",
     desc: "Popis místa",
     map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
   },
@@ -38,6 +41,7 @@ const TASK_LIST = [
     img: u4,
     title: "Kvóty EU",
     pts: 7,
+    lang: "bodů",
     desc: "Popis místa",
     map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
   },
@@ -45,6 +49,7 @@ const TASK_LIST = [
     img: u5,
     title: "Je to les? Není to les?",
     pts: 8,
+    lang: "bodů",
     desc: "Popis místa",
     map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
   },
@@ -52,6 +57,7 @@ const TASK_LIST = [
     img: u6,
     title: "Zlatý poklad",
     pts: 4,
+    lang: "body",
     desc: "Popis místa",
     map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
   },
@@ -59,6 +65,7 @@ const TASK_LIST = [
     img: u7,
     title: "Zlato v hrdle",
     pts: 2,
+    lang: "body",
     desc: "Popis místa",
     map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
   },
@@ -66,6 +73,7 @@ const TASK_LIST = [
     img: u8,
     title: "Sociální průzkum",
     pts: 1,
+    lang: "bod",
     desc: "Popis místa",
     map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
   },
@@ -73,6 +81,7 @@ const TASK_LIST = [
     img: u9,
     title: "Hřídlo rozkoše",
     pts: 5,
+    lang: "bodů",
     desc: "Popis místa",
     map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
   },
@@ -120,7 +129,7 @@ function App() {
                           objectFit: "contain",
                         }} />
                     </Box>
-                    <Box sx={{flex: "0.9"}}>
+                    <Box sx={{ flex: "0.9" }}>
                       <Typography variant={"subtitle1"} sx={{ fontWeight: "bold", padding: 0 }}>
                         {task.title}
                       </Typography>
@@ -128,9 +137,15 @@ function App() {
                         {task.desc}
                       </Typography>
                     </Box>
-                    <Typography variant={"h6"} sx={{ flex: "0.2", fontWeight: "bold", textAlign: "center" }}>
-                      {task.pts}
-                    </Typography>
+                    <Box sx={{flex: "0.3", display: "flex", gap: "0.3em", alignItems: "baseline", justifyContent: "center" }}>
+                      <Typography variant={"subtitle1"} sx={{ fontWeight: "bold" }}>
+                        {task.pts}
+                      </Typography>
+                      <Typography variant={"caption"} sx={{ fontWeight: "bold" }}>
+                        {task.lang}
+                      </Typography>
+                    </Box>
+
                   </Card>
                 </a>
               </Grid>
