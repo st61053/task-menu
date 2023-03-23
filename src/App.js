@@ -107,8 +107,8 @@ function App() {
 
       <Box sx={{ width: "50em", maxWidth: "85%", backgroundColor: "transparent" }}>
         <Box sx={{ display: "flex", justifyContent: "center", paddingBottom: "1em" }}>
-          <Typography variant={"h4"} sx={{ fontWeight: "bold", color: "white", textShadow: "1px 1px 2px black", fontFamily: "Comic Sans MS" }}>
-            Seznam úkolů
+          <Typography variant={"h4"} sx={{ fontWeight: "bold", color: "white", textShadow: "1px 1px 2px black", fontFamily: "AztecsFont" }}>
+            Seznam ukolu
           </Typography>
         </Box>
         <Grid item xs={12} sx={{ display: "flex", justifyContent: "center", height: "70vh", overflowY: "auto", padding: "1em 0 2em 0" }}>

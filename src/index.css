@@ -1,6 +1,14 @@
 body {
   margin: 0;
-  font-family:  'Brush Script MT';
+  font-family:'AztecsFont';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+  font-family: "AztecsFont";
+  src: url("./mexican_knappett.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-kerning: "none";
+  }
