@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/task-menu/static/css/main.3919a396.css",
-    "main.js": "/task-menu/static/js/main.e94b5075.js",
+    "main.css": "/task-menu/static/css/main.a2f04173.css",
+    "main.js": "/task-menu/static/js/main.71bdbac0.js",
     "static/js/787.ff3d5d17.chunk.js": "/task-menu/static/js/787.ff3d5d17.chunk.js",
     "static/media/list_bg2.jpg": "/task-menu/static/media/list_bg2.082237e714f9fdf3af74.jpg",
     "static/media/u1.jpg": "/task-menu/static/media/u1.84d5be6af9ed570fc1d5.jpg",
     "static/media/u9.jpg": "/task-menu/static/media/u9.d648ee3044a4147831c3.jpg",
+    "static/media/mexican_knappett.ttf": "/task-menu/static/media/mexican_knappett.67ea93b8aa71521c2fb4.ttf",
     "static/media/u8.jpg": "/task-menu/static/media/u8.43c49a59264715c697f7.jpg",
     "static/media/u2.jpg": "/task-menu/static/media/u2.b99ad27a202d256a96cb.jpg",
     "static/media/u6.jpg": "/task-menu/static/media/u6.d3d7645509eea3af341a.jpg",
@@ -14,12 +15,12 @@
     "static/media/u7.jpg": "/task-menu/static/media/u7.50011fc2c5a6ef911683.jpg",
     "static/media/u3.jpg": "/task-menu/static/media/u3.690d07b51309a7229b75.jpg",
     "index.html": "/task-menu/index.html",
-    "main.3919a396.css.map": "/task-menu/static/css/main.3919a396.css.map",
-    "main.e94b5075.js.map": "/task-menu/static/js/main.e94b5075.js.map",
+    "main.a2f04173.css.map": "/task-menu/static/css/main.a2f04173.css.map",
+    "main.71bdbac0.js.map": "/task-menu/static/js/main.71bdbac0.js.map",
     "787.ff3d5d17.chunk.js.map": "/task-menu/static/js/787.ff3d5d17.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3919a396.css",
-    "static/js/main.e94b5075.js"
+    "static/css/main.a2f04173.css",
+    "static/js/main.71bdbac0.js"
   ]
 }
