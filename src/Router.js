@@ -2,6 +2,7 @@ import React from "react";
 import Menu from "./Menu";
 import Quest from "./Quest";
 import { Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 const ROUTER = [
   {
@@ -53,12 +54,18 @@ const ROUTER = [
 
 const Router = () => {
   return (
-    <Routes>
-      <Route exact path="/" element={<Menu />} />
-      {ROUTER.map((route, id) => (
-        <Route key={`route_${id}`} path={route.path} element={route.element} />
-      ))}
-    </Routes>
+    <HashRouter>
+      <Routes>
+        <Route exact path="/" element={<Menu />} />
+        {ROUTER.map((route, id) => (
+          <Route
+            key={`route_${id}`}
+            path={route.path}
+            element={route.element}
+          />
+        ))}
+      </Routes>
+    </HashRouter>
   );
 };
 
