@@ -165,7 +165,7 @@ const Quest = ({ questKey }) => {
           </Box>
         </Grid>
 
-        <Grid item xs={12} sx={{height: "55vh"}}>
+        <Grid item xs={12}>
           <Divider />
           <Typography sx={{padding: "1em 0", textAlign: "justify"}} variant={"body1"}>{QUEST.quest}</Typography>
         </Grid>
