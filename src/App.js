@@ -1,98 +1,78 @@
-import list_bg2 from './list_bg2.jpg';
-import u1 from './u1.jpg';
-import u2 from './u2.jpg';
-import u3 from './u3.jpg';
-import u4 from './u4.jpg';
-import u5 from './u5.jpg';
-import u6 from './u6.jpg';
-import u7 from './u7.jpg';
-import u8 from './u8.jpg';
-import u9 from './u9.jpg';
-import { Box, Card, Grid } from "@mui/material";
-import Typography from "@mui/material/Typography";
+import list_bg2 from "./list_bg2.jpg";
 
+import React from "react";
+import { Box } from "@mui/material";
+import Menu from "./Menu";
+import Quest from "./Quest";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const TASK_LIST = [
+const ROUTER = createBrowserRouter([
   {
-    img: u1,
-    title: "Šaty dělaj člověka",
-    pts: 5,
-    lang: "bodů",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
+    path: "/",
+    element: <Menu />,
+    errorElement: <></>,
   },
   {
-    img: u2,
-    title: "Poklona vládci",
-    pts: 10,
-    lang: "bodů",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
+    path: "/hadrova-panenka",
+    element: <Quest questKey={"hadrova-panenka"} />,
+    errorElement: <>NE</>,
   },
   {
-    img: u3,
-    title: "Šamanův lektvar",
-    pts: 3,
-    lang: "body",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
+    path: "/diktator",
+    element: <Quest questKey={"diktator"} />,
+    errorElement: <>NE</>,
   },
   {
-    img: u4,
-    title: "Kvóty EU",
-    pts: 7,
-    lang: "bodů",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
+    path: "/panoramix",
+    element: <Quest questKey={"panoramix"} />,
+    errorElement: <>NE</>,
   },
   {
-    img: u5,
-    title: "Je to les? Není to les?",
-    pts: 8,
-    lang: "bodů",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
+    path: "/greta-thunbergova",
+    element: <Quest questKey={"greta-thunbergova"} />,
+    errorElement: <>NE</>,
   },
   {
-    img: u6,
-    title: "Zlatý poklad",
-    pts: 4,
-    lang: "body",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
+    path: "/forest-gump",
+    element: <Quest questKey={"forest-gump"} />,
+    errorElement: <>NE</>,
   },
   {
-    img: u7,
-    title: "Zlato v hrdle",
-    pts: 2,
-    lang: "body",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
+    path: "/mam-te-rada-jako-sul",
+    element: <Quest questKey={"mam-te-rada-jako-sul"} />,
+    errorElement: <>NE</>,
   },
   {
-    img: u8,
-    title: "Sociální průzkum",
-    pts: 1,
-    lang: "bod",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
+    path: "/slavik",
+    element: <Quest questKey={"slavik"} />,
+    errorElement: <>NE</>,
   },
   {
-    img: u9,
-    title: "Hřídlo rozkoše",
-    pts: 5,
-    lang: "bodů",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8"
+    path: "/jak-se-ti-zije",
+    element: <Quest questKey={"jak-se-ti-zije"} />,
+    errorElement: <>NE</>,
   },
-]
+  {
+    path: "/pasak",
+    element: <Quest questKey={"pasak"} />,
+    errorElement: <>NE</>,
+  },
+
+]);
 
 function App() {
   return (
-    <Box sx={{ height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
+    <Box
+      sx={{
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <img
         src={list_bg2}
-        alt='bgImage'
+        alt="bgImage"
         draggable="false"
         dragstart="false"
         style={{
@@ -102,56 +82,14 @@ function App() {
           position: "absolute",
           left: 0,
           top: 0,
-          zIndex: -1
-        }} />
+          zIndex: -1,
+        }}
+      />
 
-      <Box sx={{ width: "50em", maxWidth: "85%", backgroundColor: "transparent" }}>
-        <Box sx={{ display: "flex", justifyContent: "center", paddingBottom: "1em" }}>
-          <Typography variant={"h4"} sx={{ fontWeight: "bold", color: "white", textShadow: "1px 1px 2px black", fontFamily: "AztecsFont", fontKerning: "none" }}>
-            Seznam ukolu
-          </Typography>
-        </Box>
-        <Grid item xs={12} sx={{ display: "flex", justifyContent: "center", height: "70vh", overflowY: "auto", padding: "1em 0 2em 0" }}>
-          <Grid container>
-            {TASK_LIST.map((task, index) => (
-              <Grid item xs={12} key={`${task.title}_${index}`} sx={{ padding: "0 0 1.1em 0" }}>
-                <a style={{ textDecoration: "none" }} href={task.map}>
-                  <Card sx={{ display: "flex", gap: "1em", padding: "0.5em", alignItems: "center" }}>
-                    <Box sx={{ width: "50px", height: "50px", flex: "0.2", }}>
-                      <img
-                        src={task.img}
-                        alt={task.img}
-                        draggable="false"
-                        dragstart="false"
-                        width={"100%"}
-                        height={"100%"}
-                        style={{
-                          objectFit: "contain",
-                        }} />
-                    </Box>
-                    <Box sx={{ flex: "0.9" }}>
-                      <Typography variant={"subtitle1"} sx={{ fontWeight: "bold", padding: 0 }}>
-                        {task.title}
-                      </Typography>
-                      <Typography variant={"caption"}>
-                        {task.desc}
-                      </Typography>
-                    </Box>
-                    <Box sx={{flex: "0.3", display: "flex", gap: "0.3em", alignItems: "baseline", justifyContent: "center" }}>
-                      <Typography variant={"subtitle1"} sx={{ fontWeight: "bold" }}>
-                        {task.pts}
-                      </Typography>
-                      <Typography variant={"caption"} sx={{ fontWeight: "bold" }}>
-                        {task.lang}
-                      </Typography>
-                    </Box>
-
-                  </Card>
-                </a>
-              </Grid>
-            ))}
-          </Grid>
-        </Grid>
+      <Box
+        sx={{ width: "50em", maxWidth: "85%", backgroundColor: "transparent" }}
+      >
+          <RouterProvider router={ROUTER} />
       </Box>
     </Box>
   );
