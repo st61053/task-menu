@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/task-menu/static/css/main.a2f04173.css",
-    "main.js": "/task-menu/static/js/main.59dbc41f.js",
+    "main.js": "/task-menu/static/js/main.0b2099f9.js",
     "static/js/787.ff3d5d17.chunk.js": "/task-menu/static/js/787.ff3d5d17.chunk.js",
     "static/media/list_bg2.jpg": "/task-menu/static/media/list_bg2.082237e714f9fdf3af74.jpg",
     "static/media/u1.jpg": "/task-menu/static/media/u1.84d5be6af9ed570fc1d5.jpg",
+    "static/media/u10.jpg": "/task-menu/static/media/u10.cd9a41045c27b0fa6eff.jpg",
     "static/media/u9.jpg": "/task-menu/static/media/u9.d648ee3044a4147831c3.jpg",
     "static/media/mexican_knappett.ttf": "/task-menu/static/media/mexican_knappett.67ea93b8aa71521c2fb4.ttf",
     "static/media/u8.jpg": "/task-menu/static/media/u8.43c49a59264715c697f7.jpg",
@@ -16,11 +17,11 @@
     "static/media/u3.jpg": "/task-menu/static/media/u3.690d07b51309a7229b75.jpg",
     "index.html": "/task-menu/index.html",
     "main.a2f04173.css.map": "/task-menu/static/css/main.a2f04173.css.map",
-    "main.59dbc41f.js.map": "/task-menu/static/js/main.59dbc41f.js.map",
+    "main.0b2099f9.js.map": "/task-menu/static/js/main.0b2099f9.js.map",
     "787.ff3d5d17.chunk.js.map": "/task-menu/static/js/787.ff3d5d17.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a2f04173.css",
-    "static/js/main.59dbc41f.js"
+    "static/js/main.0b2099f9.js"
   ]
 }
