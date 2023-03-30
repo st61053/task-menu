@@ -12,6 +12,7 @@ import u7 from "./u7.jpg";
 import u8 from "./u8.jpg";
 import u9 from "./u9.jpg";
 import u10 from "./u10.jpg";
+import u11 from "./u11.jpg";
 
 const TASK_LIST = [
   // {
@@ -23,76 +24,94 @@ const TASK_LIST = [
   //   map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
   // },
   {
+    // rdy
     img: u2,
     title: "Poklona vládci",
-    pts: 10,
+    pts: 12,
     lang: "bodů",
     desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
+    map: "https://goo.gl/maps/ZRVHXLxFe9QZH7AS9",
   },
   {
+    // rdy
     img: u3,
     title: "Šamanův lektvar",
-    pts: 3,
-    lang: "body",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
-  },
-  {
-    img: u4,
-    title: "Kvóty EU",
     pts: 7,
     lang: "bodů",
     desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
+    map: "https://goo.gl/maps/rMpxc7JMWVQojmMr6",
   },
   {
-    img: u5,
-    title: "Je to les? Není to les?",
+    // rdy
+    img: u4,
+    title: "Kvóty EU",
     pts: 8,
     lang: "bodů",
     desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
+    map: "https://goo.gl/maps/f38z4GwdYNSEbVYV8",
   },
   {
+    // rdy
+    img: u5,
+    title: "Je to les? Není to les?",
+    pts: 6,
+    lang: "bodů",
+    desc: "Popis místa",
+    map: "https://goo.gl/maps/VpHuuacbG664GW3P8",
+  },
+  {
+    // rdy
     img: u6,
     title: "Zlatý poklad",
+    pts: "?",
+    lang: "bodů",
+    desc: "Popis místa",
+    map: "https://goo.gl/maps/FyLmGMM4ox2UkhKm6",
+  },
+  {
+    // rdy
+    img: u7,
+    title: "Zlato v hrdle",
+    pts: 10,
+    lang: "bodů",
+    desc: "Popis místa",
+    map: "https://goo.gl/maps/fDwVgN1A9HyUE5gA8",
+  },
+  {
+    // rdy
+    img: u8,
+    title: "Sociální průzkum",
+    pts: 8,
+    lang: "bodů",
+    desc: "Popis místa",
+    map: "https://goo.gl/maps/dfh1PbW4i6xCFw1s7",
+  },
+  {
+    // rdy
+    img: u9,
+    title: "Hřídlo rozkoše",
     pts: 4,
     lang: "body",
     desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
+    map: "https://goo.gl/maps/hHSjRj9vMrmBqAHZ9",
   },
   {
-    img: u7,
-    title: "Zlato v hrdle",
-    pts: 2,
-    lang: "body",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
-  },
-  {
-    img: u8,
-    title: "Sociální průzkum",
-    pts: 1,
-    lang: "bod",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
-  },
-  {
-    img: u9,
-    title: "Hřídlo rozkoše",
-    pts: 5,
-    lang: "bodů",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
-  },
-  {
+    // rdy
     img: u10,
     title: "Přes hřebeny vln",
     pts: 5,
     lang: "bodů",
     desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
+    map: "https://goo.gl/maps/Z7cnvwkRFosCTNQg6",
+  },
+  {
+    // rdy
+    img: u11,
+    title: "Jako ryba ve vodě",
+    pts: 15,
+    lang: "bodů",
+    desc: "Popis místa",
+    map: "https://goo.gl/maps/jocPAUj6GC6Vq1ZU8",
   },
 ];
 

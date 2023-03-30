@@ -55,6 +55,11 @@ const ROUTER = [
     element: <Quest questKey={"kure-joe-z-polabi"} />,
     errorElement: <>NE</>,
   },
+  {
+    path: "/fish-and-chips",
+    element: <Quest questKey={"fish-and-chips"} />,
+    errorElement: <>NE</>,
+  },
 ];
 
 const Router = () => {

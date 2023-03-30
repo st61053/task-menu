@@ -15,6 +15,7 @@ import u7 from "./u7.jpg";
 import u8 from "./u8.jpg";
 import u9 from "./u9.jpg";
 import u10 from "./u10.jpg";
+import u11 from "./u11.jpg";
 
 const Quest = ({ questKey }) => {
   const QUEST_LIST = [
@@ -31,7 +32,7 @@ const Quest = ({ questKey }) => {
       key: "diktator",
       img: u2,
       title: "Poklona vládci",
-      pts: 10,
+      pts: 12,
       lang: "bodů",
       quest:
         "Váš vládce, váš pán, vaše světlo a naděje. On je tvůj bůh a ty jsi jeho poddaný. Vymyslete a zahrajte rituální obřad pro svého vládce. Aby óóó vašeho vládce uctívali i místní obyvatelé, pokuste se je konvertovat a zapojte do obřadu alespoň další  3 náhodné místní obyvatele. Za každou duší místního navíc naroste bohům zpět jeden vypadlý vlas, což někteří z nich náležitě ocení. ",
@@ -40,8 +41,8 @@ const Quest = ({ questKey }) => {
       key: "panoramix",
       img: u3,
       title: "Šamanův lektvar",
-      pts: 3,
-      lang: "body",
+      pts: 7,
+      lang: "bodů",
       quest:
         "Šaman ovládá pradávné a magické síly, jež se vymykají hranicím lidského chápání. Váš šaman nechť navštíví místní stravovací zařízení, ve které pořídí minimálně 3 tekuté ingredience, různé barvy a chuti, avšak čím více ingrediencí, tím více chuti a pradávné síly, již bohové jistě ocení. Z nich namíchá magický povzbuzující lektvar a dá okusit každému ze svého kmene, aby ho tak obdaroval jeho nadpozemskými schopnostmi.",
     },
@@ -49,7 +50,7 @@ const Quest = ({ questKey }) => {
       key: "greta-thunbergova",
       img: u4,
       title: "Kvóty EU",
-      pts: 7,
+      pts: 8,
       lang: "bodů",
       quest:
         "Jedna z věcí, které se na tomto skoro až nepřátelském území nikdo nevyhne a je jedno jestli jsi pes, automobil, malý podnikatel, jenž je páteří společnosti a nebo přivandrovalec exotického původu. Aby nedošlo k vaší deportaci, musíte ukázat, že váš pobyt na území EU nebude na škodu. Zaznamenejte jak provádíte dobrý skutek ku prospěchu někoho z tamních obyvatel. Čím bude dobrý skutek lepší, tím více se bohům vrátí síly a větší chuť a připravenost na milostné hrátky za závěsy ložnice budou míti.",
@@ -58,7 +59,7 @@ const Quest = ({ questKey }) => {
       key: "forest-gump",
       img: u5,
       title: "Je to les? Není to les?",
-      pts: 8,
+      pts: 6,
       lang: "bodů",
       quest:
         " Bylo by dobré zjistit, jestli se v okolí nenachází nějaký hájek, který by se dal přejmenovat na hájek bohů. Spočítej, kolik stromů se nachází v místě nazývaném Palackého sady a zamysli se nad tím, jestli by se dal označit za les, či ne, popřípadě jak jinak by se takový stromový útvar dal označit. Strom spočítáš tak, že ho celý kolem dokola obejmeš, klidně i ve více lidech, když to bude třeba. ",
@@ -67,8 +68,8 @@ const Quest = ({ questKey }) => {
       key: "mam-te-rada-jako-sul",
       img: u6,
       title: "Zlatý poklad",
-      pts: 4,
-      lang: "body",
+      pts: "?",
+      lang: "bodů",
       quest:
         "Hej vy, pssst! Teďka pěkně potichu a nikomu ani muk. Někde ve městě se nachází zlatý poklad. Nikdo ho však již dlouhá léta neviděl. Vy však vypadáte, že byste mohli mít na zlato čuch. A taky byste ho mohli potřebovat podle toho jak směšně vypadáte. Zjistěte jakou podobu bájný zlatý poklad má a kde se to nachází.",
     },
@@ -76,8 +77,8 @@ const Quest = ({ questKey }) => {
       key: "slavik",
       img: u7,
       title: "Zlato v hrdle",
-      pts: 2,
-      lang: "body",
+      pts: 10,
+      lang: "bodů",
       quest:
         "Umění je beze sporu důležitá část každé kultury. Krásně zapěná óda pohladí leckterého boha na duši. Slož píseň oslavující krásy zdejšího kraje a za doprovodu vlastně vyrobených hudebních nástrojů ji předveď na veřejném prostranství. Bez potlesku se nevracej. Čím větší potlesk tím větší sláva óóó bohů, která povede k jejich štědrosti.",
     },
@@ -85,8 +86,8 @@ const Quest = ({ questKey }) => {
       key: "jak-se-ti-zije",
       img: u8,
       title: "Sociální průzkum",
-      pts: 1,
-      lang: "bod",
+      pts: 8,
+      lang: "bodů",
       quest:
         "Je důležité místním obyvatelům Písku porozumět a nahlédnout do jejich prostých srdcí. Natočte sérii krátkých rozhovorů s místními obyvateli, nejlépe z různých věkových skupin a položte jim pár otázek směřující na jejich život v Písku, spokojenost s ním a zda mají nějaké ponětí o existenci vaší dávné civilizace.",
     },
@@ -94,8 +95,8 @@ const Quest = ({ questKey }) => {
       key: "pasak",
       img: u9,
       title: "Hřídlo rozkoše",
-      pts: 5,
-      lang: "bodů",
+      pts: 4,
+      lang: "body",
       quest:
         "I vaši ztracení vládci mají své touhy a je možné, že v případě nalezení budou zvědaví na nějaký tip ohledně místního sortimentu služeb choulostivého charakteru. Bude jim stačit znát pouze adresu, telefonní kontakt, otevírací dobu a ceník nabízených služeb.",
     },
@@ -108,6 +109,14 @@ const Quest = ({ questKey }) => {
       quest:
         " Ukažte bohům, že nejste jenom banda nerozvinutých, zaostalých, primitivních a neinteligentních domorodců, které by někdo mohl označit za asociální, retardované a nebo dokonce debilní. Ještě štěstí, že to zatím nikdo neudělal, ale mohl by. Zjisti kolik mostů vede přes řeku protékající místním městem a v jakém roce byly postaveny. Každý most je mostem k úspěchu.",
     },
+    {
+      key: "fish-and-chips",
+      img: u11,
+      title: "Jako ryba ve vodě",
+      pts: 15,
+      lang: "bodů",
+      quest:
+       "Jsou vody zdejší řeky bezpečné? Je jen jeden způsob jak to spolehlivě zjistit. Ztráty jsou povoleny."},
   ];
 
   const FAKE_QUEST = {
