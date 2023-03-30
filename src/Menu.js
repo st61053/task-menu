@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Card, Grid } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
-import u1 from "./u1.jpg";
+// import u1 from "./u1.jpg";
 import u2 from "./u2.jpg";
 import u3 from "./u3.jpg";
 import u4 from "./u4.jpg";
@@ -11,16 +11,17 @@ import u6 from "./u6.jpg";
 import u7 from "./u7.jpg";
 import u8 from "./u8.jpg";
 import u9 from "./u9.jpg";
+import u10 from "./u10.jpg";
 
 const TASK_LIST = [
-  {
-    img: u1,
-    title: "Šaty dělaj člověka",
-    pts: 5,
-    lang: "bodů",
-    desc: "Popis místa",
-    map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
-  },
+  // {
+  //   img: u1,
+  //   title: "Šaty dělaj člověka",
+  //   pts: 5,
+  //   lang: "bodů",
+  //   desc: "Popis místa",
+  //   map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
+  // },
   {
     img: u2,
     title: "Poklona vládci",
@@ -80,6 +81,14 @@ const TASK_LIST = [
   {
     img: u9,
     title: "Hřídlo rozkoše",
+    pts: 5,
+    lang: "bodů",
+    desc: "Popis místa",
+    map: "https://goo.gl/maps/die91ojCGK6bVMoM8",
+  },
+  {
+    img: u10,
+    title: "Přes hřebeny vln",
     pts: 5,
     lang: "bodů",
     desc: "Popis místa",

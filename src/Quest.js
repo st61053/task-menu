@@ -2,7 +2,8 @@ import React from "react";
 import { Box, Card, Grid, Button } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import { Link } from "react-router-dom";
 
 import u1 from "./u1.jpg";
 import u2 from "./u2.jpg";
@@ -13,6 +14,7 @@ import u6 from "./u6.jpg";
 import u7 from "./u7.jpg";
 import u8 from "./u8.jpg";
 import u9 from "./u9.jpg";
+import u10 from "./u10.jpg";
 
 const Quest = ({ questKey }) => {
   const QUEST_LIST = [
@@ -97,6 +99,15 @@ const Quest = ({ questKey }) => {
       quest:
         "I vaši ztracení vládci mají své touhy a je možné, že v případě nalezení budou zvědaví na nějaký tip ohledně místního sortimentu služeb choulostivého charakteru. Bude jim stačit znát pouze adresu, telefonní kontakt, otevírací dobu a ceník nabízených služeb.",
     },
+    {
+      key: "kure-joe-z-polabi",
+      img: u10,
+      title: "Přes hřebeny vln",
+      pts: 5,
+      lang: "bodů",
+      quest:
+        " Ukažte bohům, že nejste jenom banda nerozvinutých, zaostalých, primitivních a neinteligentních domorodců, které by někdo mohl označit za asociální, retardované a nebo dokonce debilní. Ještě štěstí, že to zatím nikdo neudělal, ale mohl by. Zjisti kolik mostů vede přes řeku protékající místním městem a v jakém roce byly postaveny. Každý most je mostem k úspěchu.",
+    },
   ];
 
   const FAKE_QUEST = {
@@ -167,13 +178,25 @@ const Quest = ({ questKey }) => {
 
         <Grid item xs={12}>
           <Divider />
-          <Typography sx={{padding: "1em 0", textAlign: "justify"}} variant={"body1"}>{QUEST.quest}</Typography>
+          <Typography
+            sx={{ padding: "1em 0", textAlign: "justify" }}
+            variant={"body1"}
+          >
+            {QUEST.quest}
+          </Typography>
         </Grid>
-        <Grid item xs={12} sx={{display: "flex", justifyContent: "flex-end"}}>
+        <Grid item xs={12} sx={{ display: "flex", justifyContent: "flex-end" }}>
           <Divider />
-          <Button sx={{display: "flex", alignItems: "center"}} variant="outlined" color="inherit" startIcon={<ArrowBackIosNewIcon />}>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Button
+              sx={{ display: "flex", alignItems: "center", color: "black" }}
+              variant="outlined"
+              color="inherit"
+              startIcon={<ArrowBackIosNewIcon />}
+            >
               Menu
-          </Button>
+            </Button>
+          </Link>
         </Grid>
       </Grid>
     </Card>

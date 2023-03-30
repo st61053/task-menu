@@ -2,6 +2,7 @@ import list_bg2 from "./list_bg2.jpg";
 
 import React from "react";
 import { Box } from "@mui/material";
+document.title = 'První Zátokový sraz 2023';
 
 function App({children}) {
   return (
